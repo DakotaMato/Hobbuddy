@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbuddy Post Creation Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app1.css">
+	<style> 
+		body{background-color: #D4FEC8; font-family: "Verdana"; color: #560080; box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9);} 
+		.navbar-default{box-shadow: inset -20px 0px 20px 0px rgba(255,255,255,0.7);}
+		#shadow{box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9); padding-bottom: 10.6em; margin-top:-19px;}
+		#header{font-weight: bold;}
+		.modal-footer{background-color: #ADFD96; border-top: 0px solid #91D350;}
+		.modal-header{background-color: #ADFD96; border-bottom: 2px solid #91D350;}
+		.modal-body{background-color: #ADFD96;}
+		.form-control{color: #5B466C; background-color: #ADFD96; border: 2px solid #7DC832;}
+		.form-control::placeholder{color: #5B466C;}
+		#login{background-color: #869CEA; border-color: #869CEA;}
+		.btn-primary{background-color: #393F80; border-color: #393F80;}
+		.thumbnail{background-color: #ADFD96; border-color: #73B82E; border: 5px solid #73B82E; color: #560080;}
+		h3, h4, h5{color:#560080;}
+		.thumbnail .caption{color:#272753;}
+		.btn-danger{background-color: #FE8758; border-color: #FE8758;}
+	</style>
+	
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	
+</head>
+<body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- TO DO  
+ Align Elements Vertically Properly
+ Make Links Work
+ Validate HTML
+ Make Proper CSS Document
+ Validate CSS
+ Style Logo Properly
+ Style Buttons Properly
+ Add Fallback Fonts
+ 
+ -->
+ 
+<div class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#mynavbar-content">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Hobbuddy</a>
+			<button id="login" data-toggle="modal" data-target="#loginModal" class="btn btn-primary">Login</button>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="mynavbar-content">
+			<ul class="nav navbar-nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="advice.html">Advice</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li class="active"><a href="create.html">Create</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="shadow">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-xs-12 text-center">
+			<h2 id="header">Create Post</h2>
+		</div>
+	</div>
+</div>
+ 
+ 
+ 
+<div class="container">
+	<form class="form" onsubmit="myFunction2(); return false">
+		<div class="form-group">
+			<label for="name2Field">Name</label>
+			<input type="text" class="form-control" id="name2Field" placeholder="Your Name">
+		</div>
+		
+		<div class="form-group">
+			<label for="postField">Post Name</label>
+			<input type="text" class="form-control" id="postField" placeholder="Name of Your Post">
+		</div>
+		<div class="row">
+		<div class="form-group col-xs-12">
+			<label for="descField">Description</label>
+			<textarea class="form-control" id="descField" placeholder="Give other buddies some details about you or your post!"></textarea>
+		</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="locationField">Location</label>
+			<input type="text" class="form-control" id="locationField" placeholder="Post the platform or location you want to meet in/at.">
+		</div>
+		
+		<div class="form-group">
+			<label for="dateField">Date</label>
+			<input type="text" class="form-control" id="dateField" placeholder="Choose a week for around when you'd like to schedule your buddy meet.">
+		</div>
+	
+		<div class="form-check">
+			<label class="form-check-label" for="flexRadioDefault1">Art</label>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  checked>
+		</div>
+		
+		<div class="form-check">
+			<label class="form-check-label" for="flexRadioDefault2">Exercising</label>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+		</div>
+		
+		<div class="form-check">
+			<label class="form-check-label" for="flexRadioDefault3">Movie Watching</label>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+		</div>
+		
+		<div class="form-check">
+			<label class="form-check-label" for="flexRadioDefault4">Reading</label>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+		</div>
+		
+		<select id="timeframeField" class="form-select" aria-label="Default select example">
+			<option selected>Select a timeframe for your hobby</option>
+			<option value="1">Morning</option>
+			<option value="2">Afternoon</option>
+			<option value="3">Night</option>
+		</select>
+		
+		
+		<button type="submit" class="btn btn-primary">Post!</button>
+		<button type="reset" class="btn btn-default">Reset</button>
+	
+	</form>
+	
+	<div class="row">
+		<div class="col-md-12 col-xs-12 text-center">
+			<h2 style="text-decoration: underline;">Your Post</h2>
+		</div>
+	</div>
+	
+ 	<div class="row">
+		<div class="col-md-3 col-md-offset-5 col-xs-12">
+			<div class="thumbnail">
+				<img id="myImage" src="images/art.png" alt="A paint bucket and paint brush together, a symbol for art.">
+				<div class="caption">
+					<h4 id="inOOut">Default</h4>
+					<h3 id="postTitle">Default</h3>
+					<h5 id="postTime">Default</h5>
+					<h5 id="postName">Default</h5>
+					<p id="description"></p>
+					<p><a href="#" class="btn btn-primary">Details</a>
+					 <button type="button" class="btn btn-danger tooltipButton disabled" data-toggle="tooltip" data-placement="right" title="Report feature is still a WIP">Report</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+ </div>
+</div>
+
+
+<!-- Modal Section for Signup/Login -->
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+	<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Login to Hobbuddy</h4>
+		</div>
+	<!-- Modal Body -->
+		<div class="modal-body">
+		<!-- Login Form -->
+			<form class="form">
+				<div class="form-group">
+					<label for="nameField">Username</label>
+					<input type="text" class="form-control" id="nameField" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for="passField">Password</label>
+					<input type="text" class="form-control" id="passField" placeholder="Password">
+				</div>
+				
+			
+	<!-- Modal Footer -->
+	<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	<button type="submit" class="btn btn-primary">Login</button>
+	</div>
+	</form>
+	</div>
+</div>
+</div>
+</div>
+
+<script>
+	function myFunction2() {
+	var name2 = document.getElementById("name2Field").value;
+	var title = document.getElementById("postField").value;
+	var desc = document.getElementById("descField").value;
+	var loc = document.getElementById("locationField").value;
+	var date = document.getElementById("dateField").value;
+	var timeframe = document.getElementById("timeframeField");
+	var timeframetext = timeframe.options[timeframe.selectedIndex].text;
+	
+	postName.textContent = name2;
+	postTitle.textContent = title;
+	description.textContent = desc;
+	inOOut.textContent = loc;
+	postTime.textContent = timeframetext;
+	
+	if(document.getElementById("flexRadioDefault1").checked){
+		document.getElementById("myImage").src="images/art.png";
+	}
+	if(document.getElementById("flexRadioDefault2").checked){
+		document.getElementById("myImage").src="images/jogging.png";
+	}
+	if(document.getElementById("flexRadioDefault3").checked){
+		document.getElementById("myImage").src="images/cinema.png";
+	}
+	if(document.getElementById("flexRadioDefault3").checked){
+		document.getElementById("myImage").src="images/cinema.png";
+	}
+	
+	}
+</script>
+
+</body>
+</html>

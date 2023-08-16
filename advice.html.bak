@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbuddy Advice</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app1.css">
+	<style> 
+		body{background-color: #D4FEC8; font-family: "Verdana"; color: #560080; box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9);} 
+		.navbar-default{box-shadow: inset -20px 0px 20px 0px rgba(255,255,255,0.7);}
+		#shadow{box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9); padding-bottom: 10.6em; margin-top:-19px;}
+		#header{font-weight: bold;}
+		.panel-default > .panel-heading{background-color:#99D65C; border-color:#B5E189;}
+		.panel{border-color:#91D350; background-color: #ADFD96}
+		.modal-footer{background-color: #ADFD96; border-top: 0px solid #91D350;}
+		.modal-header{background-color: #ADFD96; border-bottom: 2px solid #91D350;}
+		.modal-body{background-color: #ADFD96;}
+		.form-control{color: #5B466C; background-color: #ADFD96; border: 2px solid #7DC832;}
+		.form-control::placeholder{color: #5B466C;}
+		#login{background-color: #869CEA; border-color: #869CEA;}
+		.btn-primary{background-color: #393F80; border-color: #393F80;}
+		.btn-primary:hover, .btn-primary:active, .btn-primary:focus{background-color: #19192E !important; border-color: #19192E !important;}
+	</style>
+	
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	
+</head>
+<body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- TO DO  
+ Align Elements Vertically Properly
+ Make Links Work
+ Validate HTML
+ Make Proper CSS Document
+ Validate CSS
+ Style Logo Properly
+ Style Buttons Properly
+ Add Fallback Fonts
+ 
+ -->
+ <div class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#mynavbar-content">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Hobbuddy</a>
+			<button id="login" data-toggle="modal" data-target="#loginModal" class="btn btn-primary">Login</button>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="mynavbar-content">
+			<ul class="nav navbar-nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="advice.html">Advice</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="create.html">Create</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="shadow">
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-xs-12 text-center">
+			<h2 id="header">Advice</h2>
+		</div>
+	</div>
+
+
+<!-- Collapsible Group for Advice -->
+<div class="row">
+	<div class="col-md-4 col-xs-12 text-center">
+		<h3>General Advice</h3>
+	</div>
+</div>
+
+
+<div class="panel-group" id="accordion">
+	<!-- Panel 1 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How do I use Hobbuddy?
+				</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse">
+			<div class="panel-body">
+				Hobbuddy is a website built for allowing people to come together to try new things. Every person who signs up or makes a post is considered a "buddy". Using the browse feature, you can see all the posts that have been made recently and some of their details. You can contact a buddy by reaching out to whatever contact info they provided in their post and make adjustments from there. If all goes well, you should be in for a pleasant experience and potentially even a new buddy for life!
+			</div>
+		</div>
+		
+	
+	<!-- Panel 2 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How can I be less nervous? 
+				</a>
+			</h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse">
+			<div class="panel-body">
+				Meeting someone new can make anyone nervous. It's ok to be anxious about it. But, in order to keep your nerves under control, remember that we are typically our own worst critics, and others don't judge us as harshly as we judge ourselves. Make sure to get plenty of sleep the night before your buddy meet so that way you're in a sound mindset. If you start to feel overwhelmed, you can take a step back and perform some deep breaths or talk to your buddy about how you're feeling.
+			</div>
+		</div>
+	
+	<!-- Panel 3 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				What if a sketchy person contacts me?
+				</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				If you believe that someone who's contacted you doesn't have your best interests at heart, then you always have the option of either not following through on your planned meet-up, taking a trusted friend or family member with you, or reporting them once the feature has been added.
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<!-- Collapsible Group for Art Advice -->
+<div class="row">
+	<div class="col-md-4 col-xs-12 text-center">
+		<h3>Art Advice</h3>
+	</div>
+</div>
+<div class="panel-group" id="accordion2">
+	<!-- Panel 1 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2One">What materials do I need?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse2One" class="panel-collapse collapse">
+			<div class="panel-body">
+				There are many different forms of art, so the exact materials you need should be discussed between you and your buddy.
+			</div>
+		</div>
+	<!-- Panel 2 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2Two">Should I give criticism?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse2Two" class="panel-collapse collapse">
+			<div class="panel-body">
+				Many artists are very self-critical of their own work, however, criticism is important to improve. Make sure that any criticism you give is constructive in nature (meaning you tell them how they can improve in certain areas, rather than shaming them for making mistakes). However, before giving any criticism, you should ask your buddy how open they are to it if you're unsure of how they'll react.
+			</div>
+		</div>
+	
+	<!-- Panel 3 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2Three">
+				What if I and my buddy are at different skill levels of art?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse2Three" class="panel-collapse collapse">
+			<div class="panel-body">
+				The nature of doing an activity with someone else is to enjoy their company, not to compete or compare your aptitude for certain aspects of the craft. Always remember that your life path and your buddy's will be different, so it isn't fair to compare yourselves to each other.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Collapsible Group for Exercising Advice -->
+<div class="row">
+	<div class="col-md-4 col-xs-12 text-center">
+		<h3>Exercising Advice</h3>
+	</div>
+</div>
+
+<div class="panel-group" id="accordion3">
+	<!-- Panel 1 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3One">What if I'm new to exercising?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse3One" class="panel-collapse collapse">
+			<div class="panel-body">
+				Stay hydrated! The most important thing you should keep in mind is to have water on you at all times, especially during hot weather. Exercise makes you sweat, so you need water to keep your budy cool and operating at its best. Also, don't overwork yourself. If you feel like you can't keep going, then take a break.
+			</div>
+		</div>
+	<!-- Panel 2 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3Two">What if I can't keep up with my buddy?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse3Two" class="panel-collapse collapse">
+			<div class="panel-body">
+				Talk to your buddy if you feel like they're going faster than you can handle. Ideally, they should be able to accomodate to whatever speed you need, but if not, put your own safety and comfort first.
+			</div>
+		</div>
+	
+	<!-- Panel 3 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3Three">
+				What if my buddy says something rude about my body?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse3Three" class="panel-collapse collapse">
+			<div class="panel-body">
+				Cut off contact with said person. It is not someone else's place to make unnecessary comments about your body. Once the report feature is operational, you can use that as well.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+<!-- Collapsible Group for Movie Watching Advice -->
+<div class="row">
+	<div class="col-md-4 col-xs-12 text-center">
+		<h3>Movie Watching Advice</h3>
+	</div>
+</div>
+<div class="panel-group" id="accordion4">
+	<!-- Panel 1 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4One">How should I access the movie we watch?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse4One" class="panel-collapse collapse">
+			<div class="panel-body">
+				Ideally, you should be able to access the movie through means provided by your buddy. Whether that be through providing a copy, going to a place in person, or them streaming a dvd or vhs tape that they have to you.
+			</div>
+		</div>
+	<!-- Panel 2 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4Two">How talkative should I be?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse4Two" class="panel-collapse collapse">
+			<div class="panel-body">
+				This is something that should be discussed between you and your buddy, as some people like to make quips or discuss movies as they play. However, if you are in a theater, then you should be respectful and try to keep quiet.
+			</div>
+		</div>
+	
+	<!-- Panel 3 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4Three">
+				What if I don't like the movie we watch?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse4Three" class="panel-collapse collapse">
+			<div class="panel-body">
+				Try to discuss the choice of movie with your buddy if you find that the movie in question doesn't suit your interests. If worse comes to worst, just try to enjoy the company and find bits or pieces of the movie that you can appreciate.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!-- Collapsible Group for Reading Advice -->
+<div class="row">
+	<div class="col-md-4 col-xs-12 text-center">
+		<h3>Reading Advice</h3>
+	</div>
+</div>
+<div class="panel-group" id="accordion5">
+	<!-- Panel 1 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion5" href="#collapse5One">How should I access the book we read?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse5One" class="panel-collapse collapse">
+			<div class="panel-body">
+				Your buddy should provide you a copy of the book or some method to listen to it or read it digitally. 
+			</div>
+		</div>
+	<!-- Panel 2 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion5" href="#collapse5Two">What if this is the first book I've read in a while?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse5Two" class="panel-collapse collapse">
+			<div class="panel-body">
+				If you and your buddy are reading the book in real-time together, then discuss your concerns about the pace at which you read with them so that they can either slow down or make sure they don't leave you behind by stopping at certain checkpoints (like the end of a chapter). If not in real time, then don't worry about the speed of your reading.
+			</div>
+		</div>
+	
+	<!-- Panel 3 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion5" href="#collapse5Three">
+				What if I don't like the book?
+				</a>
+			</h4>
+		</div>
+		<div id="collapse5Three" class="panel-collapse collapse">
+			<div class="panel-body">
+				Much like the advice given for the similar concern for movies, try to discuss the choice of book with your buddy. If worse comes to worst, just try to enjoy the company and find bits or pieces of the book that you can appreciate.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+	
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Modal Section for Signup/Login -->
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+	<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Login to Hobbuddy</h4>
+		</div>
+	<!-- Modal Body -->
+		<div class="modal-body">
+		<!-- Login Form -->
+			<form class="form" onsubmit="myFunction(); return false">
+				<div class="form-group">
+					<label for="nameField">Username</label>
+					<input type="text" class="form-control" id="nameField" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for="passField">Password</label>
+					<input type="text" class="form-control" id="passField" placeholder="Password">
+				</div>
+				
+			
+	<!-- Modal Footer -->
+	<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	<button type="submit" class="btn btn-primary">Login</button>
+	</div>
+	</form>
+	</div>
+</div>
+</div>
+</div>
+
+
+<script>
+	function myFunction() {
+	var user = document.getElementById("nameField").value;
+	var header = document.getElementById("login");
+	header.textContent = user;
+	}
+</script>
+
+
+</body>
+</html>

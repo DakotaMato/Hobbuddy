@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbuddy Contact Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app1.css">
+	<style > 
+		body{background-color: #D4FEC8; font-family: "Verdana"; color: #560080; box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9);}  
+		.navbar-default{box-shadow: inset -20px 0px 20px 0px rgba(255,255,255,0.7);}
+		.well{background-color:#ADFD96; color:#560080;  border-color: #91D350; border-width: 5px;}
+		#shadow{box-shadow: inset 6px 4px 42px -7px rgba(255,255,255,0.9); padding-bottom: 31.6em; margin-top:-19px;}
+		#header{font-weight: bold;}
+		.modal-footer{background-color: #ADFD96; border-top: 0px solid #91D350;}
+		.modal-header{background-color: #ADFD96; border-bottom: 2px solid #91D350;}
+		.modal-body{background-color: #ADFD96;}
+		.form-control{color: #5B466C; background-color: #ADFD96; border: 2px solid #7DC832;}
+		.form-control::placeholder{color: #5B466C;}
+		#login{background-color: #869CEA; border-color: #869CEA;}
+		.btn-primary{background-color: #393F80; border-color: #393F80;}
+		.btn-primary:hover, .btn-primary:active, .btn-primary:focus{background-color: #19192E !important; border-color: #19192E !important;}
+	</style>
+	
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	
+</head>
+<body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- TO DO  
+ Align Elements Vertically Properly
+ Make Links Work
+ Validate HTML (COMPLETE)
+ Make Proper CSS Document
+ Validate CSS
+ Style Logo Properly
+ Style Buttons Properly
+ Add Fallback Fonts
+ 
+ -->
+
+ <div class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#mynavbar-content">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Hobbuddy</a>
+			<button id="login" data-toggle="modal" data-target="#loginModal" class="btn btn-primary">Login</button>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="mynavbar-content">
+			<ul class="nav navbar-nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="advice.html">Advice</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+				<li><a href="create.html">Create</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="shadow">
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-xs-12 text-center">
+			<h2 id="header">Contact</h2>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+ 	<div class="row">
+		<div class="well col-md-12 col-xs-12">
+			<p>Hobbuddy was created by Dakota Clark in 2022</p>
+			<p>If you would like to reach out to the creator of the site, then click the link below:</p>
+			<a href="mailto:dmc26594@email.vccs.edu" class="btn btn-primary">Click Here</a>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Modal Section for Signup/Login -->
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+	<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Login to Hobbuddy</h4>
+		</div>
+	<!-- Modal Body -->
+		<div class="modal-body">
+		<!-- Login Form -->
+			<form class="form" onsubmit="myFunction(); return false">
+				<div class="form-group">
+					<label for="nameField">Username</label>
+					<input type="text" class="form-control" id="nameField" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for="passField">Password</label>
+					<input type="text" class="form-control" id="passField" placeholder="Password">
+				</div>
+				
+			
+	<!-- Modal Footer -->
+	<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	<button type="submit" class="btn btn-primary">Login</button>
+	</div>
+	</form>
+	</div>
+</div>
+</div>
+</div>
+
+
+<script>
+	function myFunction() {
+	var user = document.getElementById("nameField").value;
+	var header = document.getElementById("login");
+	header.textContent = user;
+	}
+</script>
+
+
+
+
+
+
+</body>
+</html>
