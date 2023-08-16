@@ -1,0 +1,44 @@
+.navbar-default{
+	background-color: #ADFD96;
+	border-color:#ADFD96;
+	
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #404082;
+}
+
+.navbar-default .navbar-brand{
+	color: #404082;
+	font-weight: 20px;
+}
+.navbar-brand{
+	font-weight: 20px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	background-color: #D4FEC8;
+	
+}
+
+.navbar-default .navbar-nav > .active > a:hover{
+	background-color: #D4FEC8;
+}
+
+.navbar-default .navbar-nav > .active > a:focus{
+	background-color: #D4FEC8;
+}
+
+#login{
+	margin-top: 8px;
+	float: right;
+}
+
+h1, .h1{
+	font-size: 48px;
+	font-weight: 600;
+}
+
+#background{
+	opacity:0.3;
+}
